@@ -3,9 +3,9 @@ import os
 os.system('cls')
 
 print('Insira 2 Valores Inteiros')
-v1=int(input('Primeiro Valor: '))
+v1=float(input('Primeiro Valor: '))
 operador=(input('Insira o Operador Matemático: '))
-v2=int(input('Segundo Valor: '))
+v2=float(input('Segundo Valor: '))
 
 soma=(v1 + v2)
 subt=(v1 - v2)
