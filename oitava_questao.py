@@ -13,3 +13,5 @@ match cor:
         valor=print('O CD custa R$30,00')
     case 'vermelho':
         valor=print('O CD custa R$40,00')
+    case _:
+        print('Opção Inválida')
