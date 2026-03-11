@@ -1,15 +1,14 @@
-# QUESTÃO 8
+# QUESTÃO 9
 import os
 os.system('cls')
 
-cor=str(input('Digite a Cor Escolhida: ')).lower()
+renda=float(input('Informe Sua Renda Mensal: '))
+emprestimo=float(input('Informe o Valor Desejado para Empréstimo: '))
+prestacao=int(input('Informe a Quantidade de Prestações: '))
 
-match cor:
-    case 'verde':
-        valor=print('O CD custa R$10,00')
-    case 'azul':
-        valor=print('O CD custa R$20,00')
-    case 'amarelo':
-        valor=print('O CD custa R$30,00')
-    case 'vermelho':
-        valor=print('O CD custa R$40,00')
+total_emprestimo=(emprestimo / prestacao)
+
+if emprestimo <= renda*10 and total_emprestimo <= renda*10:
+    print('Empréstimo Aprovado')
+else:
+    print('Empréstimo Não Aprovado')
